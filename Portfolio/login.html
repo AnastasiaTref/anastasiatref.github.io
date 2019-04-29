@@ -1,0 +1,82 @@
+
+<!--  svg icons-->
+<!-- lists--><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Авторизация</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;amp;subset=cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFL91iT5MSHZKMf3Cb6VNzgrNhXvhlyFE"></script>
+  </head>
+  <body>
+    <div class="main-wrapper login-page">
+      <div class="s-login hero">
+        <main class="s-login__main">
+          <div class="s-login__form">
+            <div class="s-login__title">
+              <div class="block-title">
+                <h1>Авторизуйтесь</h1>
+              </div>
+            </div>
+            <div class="login-form">
+              <form action="" method="post" id="loginForm">
+                <div class="login-form__field form-group"><span class="form-group__icon">
+                    <svg class="icon login" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#login"></use>
+                    </svg></span>
+                  <label class="form-group__label visuallyHidden" for="login">Логин</label>
+                  <input class="form-group__field login-form__input" type="text" name="login" placeholder="Логин">
+                </div>
+                <div class="login-form__field form-group"><span class="form-group__icon">
+                    <svg class="icon password" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#password"></use>
+                    </svg></span>
+                  <label class="form-group__label visuallyHidden" for="password">Пароль</label>
+                  <input class="form-group__field login-form__input" type="text" name="password" placeholder="Пароль">
+                </div>
+                <div class="login-form__check-box check-box">
+                  <div class="check-box__group">
+                    <input class="check-box__input" type="checkbox" id="checkBox"><span class="check-box__icon">
+                      <svg class="icon check" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg></span>
+                  </div>
+                  <label class="check-box__label" for="checkBox">Я человек</label>
+                </div>
+                <div class="login-form__text">
+                  <p>Вы точно не робот?</p>
+                </div>
+                <div class="login-form__check-round check-round">
+                  <div class="login-form__check-round__item check-round__group">
+                    <input class="check-round__input" type="radio" name="chekradio" id="radio-box">
+                    <label class="check-round__label" for="radio-box">Да</label>
+                  </div>
+                  <div class="login-form__check-round__item check-round__group">
+                    <input class="check-round__input" type="radio" name="chekradio" id="radio-box2">
+                    <label class="check-round__label" for="radio-box2">Нет</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="s-login__nav"><a class="s-login__nav-link green-btn" href="./index.html">На главную</a>
+              <button class="s-login__nav-btn green-btn" type="button" id="signin">Войти</button>
+            </div>
+          </div>
+        </main>
+        <footer class="footer">
+          <div class="copyright">
+            <div class="copyright__content">
+              <p>© Анастасия Трефилова | Создано с любовью в LoftSchool | 2017</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="js/bundle.js" defer></script>
+  </body>
+</html>
