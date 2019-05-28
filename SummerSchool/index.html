@@ -39,13 +39,13 @@
                 <button class="navbar__link" data-href="program">Программа</button>
               </li>
               <li class="navbar__item">
-                <button class="navbar__link" data-href="details">Рабочая программа</button>
-              </li>
-              <li class="navbar__item">
                 <button class="navbar__link" data-href="speakerы">Спикеры</button>
               </li>
               <li class="navbar__item">
                 <button class="navbar__link" data-href="placement">Отель</button>
+              </li>
+              <li class="navbar__item">
+                <button class="navbar__link" data-href="members">Участники</button>
               </li>
               <li class="navbar__item">
                 <button class="navbar__link" data-href="checkin">Форма регистрации</button>
@@ -55,15 +55,23 @@
         </div>
       </div>
       <main class="s-main">
+        <button class="totop" id="js-totop"></button>
         <section class="s-info" id="info">
           <div class="container">
             <h1 class="caption">Летняя школа права<span class="data">1 - 4 августа 2019г.</span><span class="city">Санкт-Петербург</span></h1>
             <div class="s-info__content">
               <p>Это интенсивная программа для тех, кто стремится быть на первой, горячей  линии главных тем  современной нотариальной практики.</p>
               <p>Сегодня мир полон вопросов, которые требуют крепкой профессиональной подготовленности, но еще и чуткости, способности к личной работе, необыкновенного напряжения ума и сердца.</p>
-              <p><b class="brown">Летняя школа права</b> – о профессии и сегодняшнем дне</p>
-              <p><b class="brown">Летняя школа права</b> – о междисциплинарных практиках в постоянно меняющемся контексте деловой жизни</p>
-              <p><b class="brown">Летняя школа права</b> – обмен опытом, общение, консолидация</p><a class="download-link" download href="images/registration-form.doc" title="Форма регистрации">Cкачать регистрационную форму</a>
+              <p><b class="title">Летняя школа права</b> – о профессии и сегодняшнем дне</p>
+              <p><b class="title">Летняя школа права</b> – о междисциплинарных практиках в постоянно меняющемся контексте деловой жизни</p>
+              <p><b class="title">Летняя школа права</b> – обмен опытом, общение, консолидация</p>
+            </div>
+            <div class="download-link__wrap">
+              <div class="download-link__icon">
+                <svg class="icon download-icon" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#download"></use>
+                </svg>
+              </div><a class="download-link title" download href="images/registration-form.doc" title="Форма регистрации">Cкачать регистрационную форму</a>
             </div>
           </div>
         </section>
@@ -72,132 +80,678 @@
             <h1 class="caption">Программа</h1>
             <div class="s-program__content">
               <div class="b-program">
-                <div class="accordeon b-program__accordeon">
-                  <div class="accordeon__item">
-                    <div class="accordeon__trigger"> 
-                      <h3>1 августа (прибытие, размещение, регистрация, экскурсии)</h3>
-                    </div>
-                    <div class="accordeon__inner">
-                      <p>Прибытие в Санкт-Петербург (в течение дня)</p>
-                      <p>Трансферы (шатлы) в отель</p>
-                      <p>Регистрация и размещение в отеле.</p>
-                      <p>09.00 - 21.00 час : Информационный столик  для участников и гостей Мероприятия. </p>
-                      <p>15.00 – 18.00 / 16. 00 – 19.00 Сеансы экскурсионной программы специально для участников и гостей Мероприятия</p>
-                      <p>«Пушкинский Петербург» (автобус, гид), а также прогулка на кораблике по рекам и каналам Северной Венеции</p>
-                      <p>20.00: Ужин в ресторане отеля</p>
+                <div class="b-day">
+                  <div class="b-day__title">
+                    <h3> 
+                      <div class="icon-pen"></div>1 августа 2019г. (четверг) 
+                    </h3>
+                    <p class="title">Прибытие, размещение, регистрация, экскурсии</p>
+                  </div>
+                  <div class="b-day__content">
+                    <ul class="list"> 
+                      <li class="list__item">
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Прибытие в Санкт-Петербург (в течение дня);
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Трансферы (шатлы) в отель;
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Регистрация и размещение в отеле;
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Информационный столик для участников и гостей Мероприятия;
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Экскурсионные программы;
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Ужин в ресторане отеля;
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="accordeon">
+                    <div class="accordeon__item">
+                      <div class="accordeon__trigger"> 
+                        <div class="accordeon__title">
+                          <div class="icon-arrow arrow-down active">
+                            <svg class="icon down-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#down"></use>
+                            </svg>
+                          </div>
+                          <div class="icon-arrow arrow-up">
+                            <svg class="icon up-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#up"></use>
+                            </svg>
+                          </div>
+                          <h3>Подробнее</h3>
+                        </div>
+                      </div>
+                      <div class="accordeon__inner">
+                        <div class="schedule">
+                          <div class="schedule__table">
+                            <div class="schedule__row">
+                              <div class="schedule__cell"> 
+                                <p><b>Местное время:</b> московское время </p>
+                              </div>
+                              <div class="schedule__cell"> 
+                                <p><b>Прибытие, трансфер в отель, размещение участников в отеле: <br> Courtyard by Marriott Pushkin Hotel 4*</b>, расположенном по адресу: Россия, 190121, Санкт-Петербург, наб. Канала Грибоедова, д. 166/Канонерская ул. 33.</p>
+                              </div>
+                              <div class="schedule__cell"></div>
+                            </div>
+                            <div class="schedule__row">
+                              <div class="schedule__cell"> 
+                                <p>09:00 – 21:00</p>
+                              </div>
+                              <div class="schedule__cell"> 
+                                <p><b>Регистрация иногородних участников семинара</b></p>
+                              </div>
+                              <div class="schedule__cell">Фойе отеля, 1 этаж</div>
+                            </div>
+                            <div class="schedule__row">
+                              <div class="schedule__cell"> 
+                                <p>15:00 – 18:00 </p>
+                                <p>16:00 – 19:00</p>
+                              </div>
+                              <div class="schedule__cell"> 
+                                <p>Сеансы экскурсионной программы специально для участников и гостей Мероприятия </p>
+                                <ul class="list"> 
+                                  <li class="list__item">
+                                    <div class="list__icon">
+                                      <svg class="icon mark-icon" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#mark"></use>
+                                      </svg>
+                                    </div>Автобусная экскурсия «Пушкинский Петербург»
+                                  </li>
+                                  <li class="list__item"> 
+                                    <div class="list__icon">
+                                      <svg class="icon mark-icon" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#mark"></use>
+                                      </svg>
+                                    </div>Прогулка на кораблике «По рекам и каналам Северной Венеции»
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="schedule__cell">
+                                <ul class="list"> 
+                                  <li class="list__item">
+                                    <div class="list__icon">
+                                      <svg class="icon mark-icon" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#mark"></use>
+                                      </svg>
+                                    </div>Сбор на экскурсию в фойе отеля 
+                                  </li>
+                                  <li class="list__item"> 
+                                    <div class="list__icon">
+                                      <svg class="icon mark-icon" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#mark"></use>
+                                      </svg>
+                                    </div>Возвращение в отель
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="schedule__row"> 
+                              <div class="schedule__cell">20:00 </div>
+                              <div class="schedule__cell">Ужин в ресторане отеля</div>
+                              <div class="schedule__cell"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="accordeon__item">
-                    <div class="accordeon__trigger"> 
-                      <h3>02 августа (рабочая программа, турнир по боулингу)</h3>
-                    </div>
-                    <div class="accordeon__inner">
-                      <p>07.30-09.30:    Завтрак в отеле по системе «шведский стол»</p>
-                      <p>09.30 – 10.00: Сбор и регистрация участников Мероприятия (2 этаж)</p>
-                      <p>10.00 – 10.30: Открытие Мероприятия (конференц-зал)</p>
-                      <p>10.30 - 17.00:  Рабочая программа   </p>
-                      <p>В ходе рабочей программы состоятся кофе-брейк и обед для участников Мероприятия.</p>
-                      <p>18.00 – 19.00  ужин в ресторане отеля</p>
-                      <p>Свободное время</p>
-                      <p>19.00: отъезд на автобусе участников турнира по боулингу</p>
-                      <p>20.00 – 23.00: турнир по боулингу «Золотой шар»(трансфер на автобусе отель – место проведения турнира)</p>
+                </div>
+                <div class="b-day">
+                  <div class="b-day__title">
+                    <h3> 
+                      <div class="icon-pen"> </div>2 августа 2019г. (пятница)
+                    </h3>
+                    <p class="title">Рабочая программа, турнир по боулингу</p>
+                  </div>
+                  <div class="b-day__content">
+                    <ul class="list"> 
+                      <li class="list__item">
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Завтрак в отеле по системе «шведский стол»;
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Сбор и регистрация участников Мероприятия;
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Открытие Мероприятия;
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Рабочая программа / Кофе-брейк;
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Ужин в ресторане отеля/ Свободное время;
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>отъезд на автобусе участников турнира по боулингу;
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>турнир по боулингу «Золотой шар»;
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="accordeon">
+                    <div class="accordeon__item">
+                      <div class="accordeon__trigger"> 
+                        <div class="accordeon__title">
+                          <div class="icon-arrow arrow-down active">
+                            <svg class="icon down-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#down"></use>
+                            </svg>
+                          </div>
+                          <div class="icon-arrow arrow-up">
+                            <svg class="icon up-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#up"></use>
+                            </svg>
+                          </div>
+                          <h3>Подробнее</h3>
+                        </div>
+                      </div>
+                      <div class="accordeon__inner">
+                        <div class="schedule">
+                          <div class="schedule__table">
+                            <div class="schedule__row">
+                              <div class="schedule__cell"> 
+                                <p>7:30 - 9:30</p>
+                              </div>
+                              <div class="schedule__cell"> 
+                                <p>Завтрак в ресторане отеля по системе «шведский стол»</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>1 этаж</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row">
+                              <div class="schedule__cell"> 
+                                <p>9:30 – 10:00</p>
+                              </div>
+                              <div class="schedule__cell"> 
+                                <p>Регистрация участников</p>
+                              </div>
+                              <div class="schedule__cell"> 
+                                <p>2 этаж, <br> Конференц-фойе</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row">
+                              <div class="schedule__cell"> 
+                                <p>10:00 - 10:30</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <div class="schedule__content">
+                                  <h4>Открытие семинара</h4>
+                                  <p><b>Приветственные слова в адрес участников:</b> <br> Советник Министра юстиции Российской Федерации <br> <b>МЕЛЬНИКОВА Мария Аркадьевна</b></p>
+                                  <p>Президент Федеральной нотариальной палаты <br> <b>КОРСИК Константин Анатольевич</b></p>
+                                  <p>Президент Нотариальной палаты Волгоградской области, член Правления Федеральной нотариальной палаты,  <br> <b>ГОНЧАРОВА Наталья Васильевна </b></p>
+                                  <p>Почетный Президент Нотариальной палаты Санкт-Петербурга <br> <b>САЗОНОВА Мария Ивановна</b></p>
+                                  <p>Президент Нотариальной палаты Санкт-Петербурга <br> <b>ТЕРЕХОВА Мария Викторовна</b></p>
+                                  <p>Председатель Комиссии по методической работе <br>Федеральной нотариальной палаты</p>
+                                </div>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>2 этаж, <br> Конференц-зал</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row"> 
+                              <div class="schedule__cell"> 
+                                <p>10:30 – 12:00</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <div class="schedule__content"> 
+                                  <h4>«Стандарты добросовестного поведения граждан при заключении сделок, в том числе между бывшими супругами»</h4>
+                                  <p class="italic"><b>Докладчик: Шварц Михаил Зиновьевич</b> <br> Заведующий кафедрой гражданского процесса Санкт-Петербургского университета, кандидат юридических наук]</p>
+                                </div>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>2 этаж, <br> Конференц-зал</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row"> 
+                              <div class="schedule__cell"> 
+                                <p>12:00 – 12:30</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>Кофе-брейк</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>1 этаж, <br> ресторан</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row"> 
+                              <div class="schedule__cell"> 
+                                <p>12:30 – 14:00</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <div class="schedule__content"> 
+                                  <h4>«Наследственный договор как новый институт российского гражданского права»</h4>
+                                  <p class="italic"><b>Докладчик: Рассказова Наталия Юрьевна</b>. <br> Заведующая кафедрой гражданского права и кафедрой нотариата Санкт-Петербургского государственного университета, член Научно-консультативного совета Федеральной нотариальной палаты, кандидат юридических наук</p>
+                                </div>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>2 этаж, <br> Конференц-зал</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row"> 
+                              <div class="schedule__cell"> 
+                                <p>14:00 – 15:00</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>Обед в ресторане отеля </p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>1 этаж, <br> ресторан</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row"> 
+                              <div class="schedule__cell"> 
+                                <p>15:00 - 16:30</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <div class="schedule__content">
+                                  <h4>«Совместное завещание в российской нотариальной практике с 01 июня 2019 г. (различия российского и украинского совместных завещаний, применимых при наследовании). Личный фонд как альтернатива наследственному фонду» </h4>
+                                  <p class="italic"><b>Докладчик: Блинков Олег Евгеньевич</b> Доктор юридических наук, профессор, главный консультант Национальной академии нотариата Московского государственного юридического университета им.О.Е.Кутафина (МГЮА)</p>
+                                </div>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>2 этаж, <br> Конференц-зал</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row"> 
+                              <div class="schedule__cell"> 
+                                <p>16:30 – 18:00</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>Обед в ресторане отеля </p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p> </p>
+                              </div>
+                            </div>
+                            <div class="schedule__row"> 
+                              <div class="schedule__cell"> 
+                                <p>18:00 – 19:00</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>Ужин в ресторане отеля</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>1 этаж, <br> ресторан</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row"> 
+                              <div class="schedule__cell"> 
+                                <p>19:00 </p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>Отъезд из отеля на VI Турнир по боулингу «Золотой шар»  (подача трансфера к отелю)</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <ul class="list"> 
+                                  <li class="list__item">
+                                    <div class="list__icon">
+                                      <svg class="icon mark-icon" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#mark"></use>
+                                      </svg>
+                                    </div>Сбор участников в фойе отеля
+                                  </li>
+                                  <li class="list__item"> 
+                                    <div class="list__icon">
+                                      <svg class="icon mark-icon" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#mark"></use>
+                                      </svg>
+                                    </div>Возвращение в отель
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="schedule__row"> 
+                              <div class="schedule__cell"> 
+                                <p>20:00 – 23:00</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <div class="schedule__content">
+                                  <h4>VI Турнир по боулингу «Золотой шар», посвященный Международному дню молодежи</h4>
+                                </div>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>Санкт-Петербург, улица Ефимова, д.3, ТК "Сенная", 3 этаж</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="accordeon__item">
-                    <div class="accordeon__trigger"> 
-                      <h3>03 августа (рабочая программа, вечерний торжественный прием)</h3>
-                    </div>
-                    <div class="accordeon__inner">
-                      <p>07.30-09.30: Завтрак в отеле по системе «шведский стол»</p>
-                      <p>09.30 – 16.00: Рабочая программа в конференц-зале отеля : </p>
-                      <p>В ходе рабочей программы состоятся кофе-брейк и обед для участников Мероприятия.</p>
-                      <p>17.00 – 19.00: подготовка в вечерней программе</p>
-                      <p>19.00 – 23.00: Программа «Петербургский вечер» с участием артистов (специальный конкурс «Пушкинский секрет»), банкетное меню, неформальное общение.</p>
+                </div>
+                <div class="b-day">
+                  <div class="decor decor-1"></div>
+                  <div class="b-day__title">
+                    <h3> 
+                      <div class="icon-pen"></div>3 августа 2019г. (суббота)
+                    </h3>
+                    <p class="title">Рабочая программа, вечерний торжественный прием</p>
+                  </div>
+                  <div class="b-day__content">
+                    <ul class="list"> 
+                      <li class="list__item">
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Завтрак в отеле по системе «шведский стол»;
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Рабочая программа в конференц-зале отеля / Кофе-брейк;
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Подготовка к вечерней программе;
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Программа «Петербургский вечер» с участием артистов (специальный конкурс «Пушкинский секрет»), банкетное меню, неформальное общение;
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="accordeon">
+                    <div class="accordeon__item">
+                      <div class="accordeon__trigger"> 
+                        <div class="accordeon__title">
+                          <div class="icon-arrow arrow-down active">
+                            <svg class="icon down-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#down"></use>
+                            </svg>
+                          </div>
+                          <div class="icon-arrow arrow-up">
+                            <svg class="icon up-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#up"></use>
+                            </svg>
+                          </div>
+                          <h3>Подробнее</h3>
+                        </div>
+                      </div>
+                      <div class="accordeon__inner">
+                        <div class="schedule">
+                          <div class="schedule__table">
+                            <div class="schedule__row">
+                              <div class="schedule__cell"> 
+                                <p>7:30 - 10:00</p>
+                              </div>
+                              <div class="schedule__cell"> 
+                                <p>Завтрак в ресторане отеля по системе «шведский стол»</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>1 этаж, <br> ресторан</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row">
+                              <div class="schedule__cell"> 
+                                <p>9:30 – 11:30</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <div class="schedule__content">
+                                  <h4>Семинар-тренинг: </h4>
+                                  <p><b>«Управление сотрудниками в нотариальной конторе. Взаимодействие с посетителями»</b></p>
+                                  <p class="italic">Ведущий научный сотрудник Психологического института Российской Академии Образования, кандидат психологических наук <br> <b>МДИВАНИ Марина Отаровна</b></p>
+                                </div>
+                              </div>
+                              <div class="schedule__cell"> 
+                                <p>2 этаж, <br> Конференц-зал</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row">
+                              <div class="schedule__cell"> 
+                                <p>11:30 – 12:00</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>Кофе-брейк</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>1 этаж, <br> ресторан</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row"> 
+                              <div class="schedule__cell"> 
+                                <p>12:00 - 13:30</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <div class="schedule__content">
+                                  <h4>Продолжение семинара-тренинга: </h4>
+                                  <p><b>«Управление сотрудниками в нотариальной конторе. Взаимодействие с посетителями»</b></p>
+                                </div>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>2 этаж, <br> Конференц-зал</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row"> 
+                              <div class="schedule__cell"> 
+                                <p>13:30 – 14:30</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>Обед в ресторане отеля </p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>1 этаж, <br> ресторан</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row"> 
+                              <div class="schedule__cell"> 
+                                <p>14:30 – 16:00</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <div class="schedule__content">
+                                  <h4>Продолжение семинара-тренинга: </h4>
+                                  <p><b>«Управление сотрудниками в нотариальной конторе. Взаимодействие с посетителями»</b></p>
+                                </div>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>2 этаж, <br> Конференц-зал</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row"> 
+                              <div class="schedule__cell"> 
+                                <p>16:00 – 19:00</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>Свободное время</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p> </p>
+                              </div>
+                            </div>
+                            <div class="schedule__row"> 
+                              <div class="schedule__cell"> 
+                                <p>19:00 – 24:00</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <div class="schedule__content">
+                                  <h4>Дружеский ужин «Петербургский вечер», конкурс «Пушкинский секрет»</h4>
+                                </div>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>2 этаж, <br> Конференц-зал</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="accordeon__item">
-                    <div class="accordeon__trigger"> 
-                      <h3>04 августа (отъезд, дополнительные экскурсии)</h3>
-                    </div>
-                    <div class="accordeon__inner">
-                      <p>07.30-10.00: Завтрак в отеле по системе «шведский стол»</p>
-                      <p>До 12.00 час. – освобождение номеров. В отеле работает бесплатная Камера хранения для багажа.</p>
+                </div>
+                <div class="b-day">
+                  <div class="b-day__title">
+                    <h3> 
+                      <div class="icon-pen"> </div>4 августа 2019г. (воскресенье)
+                    </h3>
+                    <p class="title">Отъезд, дополнительные экскурсии (для желающих)</p>
+                  </div>
+                  <div class="b-day__content">
+                    <ul class="list"> 
+                      <li class="list__item">
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Завтрак в отеле по системе «шведский стол»;
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Освобождение номеров. В отеле работает бесплатная Камера хранения для багажа;
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Подготовка к вечерней программе;
+                      </li>
+                      <li class="list__item"> 
+                        <div class="list__icon">
+                          <svg class="icon mark-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mark"></use>
+                          </svg>
+                        </div>Программа «Петербургский вечер» с участием артистов (специальный конкурс «Пушкинский секрет»), банкетное меню, неформальное общение;
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="accordeon">
+                    <div class="accordeon__item">
+                      <div class="accordeon__trigger">
+                        <div class="accordeon__title">
+                          <div class="icon-arrow arrow-down active">
+                            <svg class="icon down-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#down"></use>
+                            </svg>
+                          </div>
+                          <div class="icon-arrow arrow-up">
+                            <svg class="icon up-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#up"></use>
+                            </svg>
+                          </div>
+                          <h3>Подробнее</h3>
+                        </div>
+                      </div>
+                      <div class="accordeon__inner">
+                        <div class="schedule">
+                          <div class="schedule__table">
+                            <div class="schedule__row">
+                              <div class="schedule__cell"> 
+                                <p>7:30 - 10:00</p>
+                              </div>
+                              <div class="schedule__cell"> 
+                                <p>Завтрак в ресторане отеля по системе «шведский стол»</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>1 этаж, <br> ресторан</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row">
+                              <div class="schedule__cell"> 
+                                <p>10.00 – 16.00</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <div class="schedule__content">
+                                  <p>Автобусная экскурсия «Царские пригороды» <span class="italic">*по желанию, оплачивается дополнительно</span></p>
+                                  <p>Желающие поехать на экскурсию могут взять вещи с собой, автобус сделает остановки в аэропорту Пулково, на Московском вокзале и вернется в отель.</p>
+                                </div>
+                              </div>
+                              <div class="schedule__cell"> 
+                                <p>Сбор в фойе  отеля</p>
+                              </div>
+                            </div>
+                            <div class="schedule__row">
+                              <div class="schedule__cell"> 
+                                <p>В течение дня</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p>Отъезд участников</p>
+                              </div>
+                              <div class="schedule__cell">
+                                <p></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <p>Для желающих предлагается экскурсия «Царские пригороды» с посещением одной из императорских резиденций</p>
-              <p>Начало экскурсии: 10.00 час.</p>
-              <p>В программе: трассовый экскурс в историю царской династии, рассказ о судьбах российских царедворцев, прогулка по императорскому парку, посещение царского дворца  Окончание экскурсии: 16.000 час.</p>
-              <p>Желающие поехать на экскурсию могут взять вещи с собой, автобус сделает остановки в аэропорту Пулково, на Московском вокзале и вернется в отель.</p>
-              <p>ВНИМАНИЕ: экскурсия  проводится за дополнительную оплату Запись и оплата предварительная, в соответствии с отметкой в регистрационной форме</p>
-            </div>
-          </div>
-        </section>
-        <section class="s-details" id="details">
-          <div class="container">
-            <h1 class="caption">Рабочая программа</h1>
-            <div class="s-details__content">
-              <div class="b-details">
-                <div class="accordeon b-program__accordeon">
-                  <div class="accordeon__item">
-                    <div class="accordeon__trigger"> 
-                      <h3>1 августа (прибытие, размещение, регистрация, экскурсии)</h3>
-                    </div>
-                    <div class="accordeon__inner">
-                      <p>Прибытие в Санкт-Петербург (в течение дня)</p>
-                      <p>Трансферы (шатлы) в отель</p>
-                      <p>Регистрация и размещение в отеле.</p>
-                      <p>09.00 - 21.00 час : Информационный столик  для участников и гостей Мероприятия. </p>
-                      <p>15.00 – 18.00 / 16. 00 – 19.00 Сеансы экскурсионной программы специально для участников и гостей Мероприятия</p>
-                      <p>«Пушкинский Петербург» (автобус, гид), а также прогулка на кораблике по рекам и каналам Северной Венеции</p>
-                      <p>20.00: Ужин в ресторане отеля</p>
-                    </div>
-                  </div>
-                  <div class="accordeon__item">
-                    <div class="accordeon__trigger"> 
-                      <h3>02 августа (рабочая программа, турнир по боулингу)</h3>
-                    </div>
-                    <div class="accordeon__inner">
-                      <p>07.30-09.30:    Завтрак в отеле по системе «шведский стол»</p>
-                      <p>09.30 – 10.00: Сбор и регистрация участников Мероприятия (2 этаж)</p>
-                      <p>10.00 – 10.30: Открытие Мероприятия (конференц-зал)</p>
-                      <p>10.30 - 17.00:  Рабочая программа   </p>
-                      <p>В ходе рабочей программы состоятся кофе-брейк и обед для участников Мероприятия.</p>
-                      <p>18.00 – 19.00  ужин в ресторане отеля</p>
-                      <p>Свободное время</p>
-                      <p>19.00: отъезд на автобусе участников турнира по боулингу</p>
-                      <p>20.00 – 23.00: турнир по боулингу «Золотой шар»(трансфер на автобусе отель – место проведения турнира)</p>
-                    </div>
-                  </div>
-                  <div class="accordeon__item">
-                    <div class="accordeon__trigger"> 
-                      <h3>03 августа (рабочая программа, вечерний торжественный прием)</h3>
-                    </div>
-                    <div class="accordeon__inner">
-                      <p>07.30-09.30: Завтрак в отеле по системе «шведский стол»</p>
-                      <p>09.30 – 16.00: Рабочая программа в конференц-зале отеля : </p>
-                      <p>В ходе рабочей программы состоятся кофе-брейк и обед для участников Мероприятия.</p>
-                      <p>17.00 – 19.00: подготовка в вечерней программе</p>
-                      <p>19.00 – 23.00: Программа «Петербургский вечер» с участием артистов (специальный конкурс «Пушкинский секрет»), банкетное меню, неформальное общение.</p>
-                    </div>
-                  </div>
-                  <div class="accordeon__item">
-                    <div class="accordeon__trigger"> 
-                      <h3>04 августа (отъезд, дополнительные экскурсии)</h3>
-                    </div>
-                    <div class="accordeon__inner">
-                      <p>07.30-10.00: Завтрак в отеле по системе «шведский стол»</p>
-                      <p>До 12.00 час. – освобождение номеров. В отеле работает бесплатная Камера хранения для багажа.</p>
-                    </div>
-                  </div>
-                </div>
+              <div class="download-link__wrap">
+                <div class="download-link__icon">
+                  <svg class="icon download-icon" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#download"></use>
+                  </svg>
+                </div><a class="download-link title" download href="images/program.doc" title="Программа">Скачать программу</a>
               </div>
-              <p>Для желающих предлагается экскурсия «Царские пригороды» с посещением одной из императорских резиденций</p>
-              <p>Начало экскурсии: 10.00 час.</p>
-              <p>В программе: трассовый экскурс в историю царской династии, рассказ о судьбах российских царедворцев, прогулка по императорскому парку, посещение царского дворца  Окончание экскурсии: 16.000 час.</p>
-              <p>Желающие поехать на экскурсию могут взять вещи с собой, автобус сделает остановки в аэропорту Пулково, на Московском вокзале и вернется в отель.</p>
-              <p>ВНИМАНИЕ: экскурсия  проводится за дополнительную оплату Запись и оплата предварительная, в соответствии с отметкой в регистрационной форме</p>
             </div>
           </div>
         </section>
@@ -212,107 +766,367 @@
               <div class="b-placement__services">
                 <div class="accordeon">
                   <div class="accordeon__item">
-                    <div class="accordeon__trigger"> 
-                      <h3>Сервисы и услуги, предоставляемые отелем:</h3>
+                    <div class="accordeon__trigger">
+                      <div class="accordeon__title">
+                        <div class="icon-arrow arrow-down active">
+                          <svg class="icon down-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#down"></use>
+                          </svg>
+                        </div>
+                        <div class="icon-arrow arrow-up">
+                          <svg class="icon up-icon" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#up"></use>
+                          </svg>
+                        </div>
+                        <h3>Сервисы и услуги, предоставляемые отелем:</h3>
+                      </div>
                     </div>
                     <div class="accordeon__inner">
-                      <ul>
-                        <li>Аренда автомобиля</li>
-                        <li>Все общественные зоны для некурящих</li>
-                        <li>Стойка бронирования авиабилетов</li>
-                        <li>Магазин подарков / газетный киоск</li>
-                        <li>Газета в вестибюле</li>
-                        <li>Завтрак «шведский стол»</li>
-                        <li>Континентальный завтрак</li>
-                        <li>Номера для гостей с ограниченными возможностями передвижения</li>
-                        <li>Обмен иностранной валюты</li>
-                        <li>Сейфы на стойке регистрации</li>
-                        <li>Стойка консьержа</li>
-                        <li>Стойка чистки обуви</li>
-                        <li>Трансфер на автомобиле класса «комфорт»</li>
-                        <li>Услуги уборки ежедневно</li>
+                      <ul class="list">
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Аренда автомобиля;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Все общественные зоны для некурящих;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Стойка бронирования авиабилетов;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Регистрация и размещение в отеле;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Магазин подарков / газетный киоск;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Газета в вестибюле;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Завтрак «шведский стол» / Континентальный завтрак;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Номера для гостей с ограниченными возможностями передвижения;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Обмен иностранной валюты;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Сейфы на стойке регистрации;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Стойка чистки обуви;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Трансфер на автомобиле класса «комфорт»;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Услуги уборки ежедневно;
+                        </li>
                       </ul>
                       <h4>Удобства для деловых людей:</h4>
-                      <ul> 
-                        <li>Телефон с двумя линиями</li>
-                        <li>Функция телефона: громкая связь</li>
-                        <li>Электрическая розетка: на уровне стола</li>
+                      <ul class="list">
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Телефон с двумя линиями;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Функция телефона: громкая связь;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Электрическая розетка: на уровне стола;
+                        </li>
                       </ul>
                       <h4>Общие удобства в номере:</h4>
-                      <ul> 
-                        <li>Будильник</li>
-                        <li>Вода в бутылках: Complimentary</li>
-                        <li>Детская кроватка / игровой манеж</li>
-                        <li>Дополнительная кровать: 1000.00 RUB Per Room Daily</li>
-                        <li>Индивидуальный климат-контроль</li>
-                        <li>Кондиционер</li>
-                        <li>Кофемашина / чайный сервиз</li>
-                        <li>Мини-холодильник</li>
-                        <li>Подушки: поролон</li>
-                        <li>Подушки: пух/перо</li>
-                        <li>Раздвижной диван-кровать</li>
-                        <li>Роскошное постельное белье: белоснежные простыни, толстый матрас, изготовленные на заказ одеяла, мягкие подушки</li>
-                        <li>Сейф</li>
-                        <li>Утюг и гладильная доска</li>
-                        <li>Электрические адаптеры</li>
+                      <ul class="list">
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Будильник;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Вода в бутылках: Complimentary;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Детская кроватка / игровой манеж;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Дополнительная кровать: 1000.00 RUB Per Room Daily;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Индивидуальный климат-контроль;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Кондиционер;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Кофемашина / чайный сервиз;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Мини-холодильник;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Подушки: поролон / Подушки: пух/перо;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Раздвижной диван-кровать;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Роскошное постельное белье: белоснежные простыни, толстый матрас, изготовленные на заказ одеяла, мягкие подушки;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Сейф;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Утюг и гладильная доска;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Электрические адаптеры;
+                        </li>
                       </ul>
                       <h4>Удобства в ванной комнате:</h4>
-                      <ul>
-                        <li>Ванна и джакузи</li>
-                        <li>Фен</li>
-                        <li>Халат</li>
+                      <ul class="list">
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Ванна и джакузи;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Фен;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Халат;
+                        </li>
                       </ul>
                       <h4>Развлечения в номере:</h4>
-                      <ul>
-                        <li>Кабельный канал CNN</li>
-                        <li>Мини-бар – бесплатно</li>
-                        <li>Фильмы/видео, платные трансляции</li>
-                        <li>Цветной телевизор</li>
+                      <ul class="list">
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Цветной телевизор;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Кабельный канал CNN;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Мини-бар – бесплатно;
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div>Фильмы / видео, платные трансляции;
+                        </li>
                       </ul>
                       <h4>Рестораны и бары:</h4>
-                      <ul>
-                        <li>Poema Restaurant <span>Начните день в Петербурге с изысканного завтрака в ресторане «Поэма» на территории отеля. К ресторану примыкает отдельная столовая VIP-комната, в которой можно проводить деловые ужины.</span></li>
-                        <li>Onegin Lounge <span>Атмосфера стильного ресторана-гостиной идеальна для общения с друзьями и для того, чтобы отдохнуть в одиночестве, наслаждаясь поданной по всем правилам чашечкой чая. Ресторан «Онегин» известен творческим подходом к кулинарному искусству, в основе которого лежит исконно русская кухня.</span></li>
-                        <li>Bierstube <span>Вкус Баварии в Санкт-Петербурге! Ресторан «Бирштубе» специализируется на классической сытной немецкой кухне. Среди других особенностей – собственная мини-пивоварня.</span></li>
+                      <ul class="list">
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div><b>Poema Restaurant</b> <span class="descr">Начните день в Петербурге с изысканного завтрака в ресторане «Поэма» на территории отеля. К ресторану примыкает отдельная столовая VIP-комната, в которой можно проводить деловые ужины;</span>
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div><b>Onegin Lounge</b> <span class="descr">Атмосфера стильного ресторана-гостиной идеальна для общения с друзьями и для того, чтобы отдохнуть в одиночестве, наслаждаясь поданной по всем правилам чашечкой чая. Ресторан «Онегин» известен творческим подходом к кулинарному искусству, в основе которого лежит исконно русская кухня;</span>
+                        </li>
+                        <li class="list__item"> 
+                          <div class="list__icon">
+                            <svg class="icon mark-icon" aria-hidden="true">
+                              <use xlink:href="images/sprite.svg#mark"></use>
+                            </svg>
+                          </div><b>Bierstube</b> <span class="descr">Вкус Баварии в Санкт-Петербурге! Ресторан «Бирштубе» специализируется на классической сытной немецкой кухне;</span>
+                        </li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div class="slider__wrap">
-                  <div class="slider">
-                    <div class="slider-nav fotorama" data-nav="thumbs"><a class="slider-nav__item" href="images/hotel/grib-kanal1.jpg">
-                        <figure class="slider__img"><img src="images/hotel/grib-kanal1.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/front1.jpg">
-                        <figure class="slider__img"><img src="images/hotel/front1.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/pushkin.jpg">
-                        <figure class="slider__img"><img src="images/hotel/pushkin.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/bar5.jpg">
-                        <figure class="slider__img"><img src="images/hotel/bar5.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/bar6.jpg">
-                        <figure class="slider__img"><img src="images/hotel/bar6.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/bar7.jpg">
-                        <figure class="slider__img"><img src="images/hotel/bar7.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/bar8.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall8.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall9.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall9.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall10.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall10.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall1.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall1.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall2.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall2.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall3.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall3.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall4.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall4.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall5.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall5.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall6.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall6.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall7.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall7.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall8.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall8.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall9.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall9.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall10.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall10.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall11.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall11.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall12.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall12.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall13.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall13.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall14.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall14.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall15.jpg">
-                        <figure class="slider__img"><img src="images/hotel/hall15.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall16">
-                        <figure class="slider__img"><img src="images/hotel/hall16.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/room1.jpg">
-                        <figure class="slider__img"><img src="images/hotel/room1.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/room2.jpg">
-                        <figure class="slider__img"><img src="images/hotel/room2.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/room3.jpg">
-                        <figure class="slider__img"><img src="images/hotel/room3.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/room4.jpg">
-                        <figure class="slider__img"><img src="images/hotel/room4.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/room5.jpg">
-                        <figure class="slider__img"><img src="images/hotel/room5.jpg" alt=""></figure></a></div>
-                  </div>
+              </div>
+              <div class="slider__wrap">
+                <div class="slider">
+                  <div class="slider-nav fotorama" data-nav="thumbs"><a class="slider-nav__item" href="images/hotel/grib-kanal1.jpg">
+                      <figure class="slider__img"><img src="images/hotel/grib-kanal1.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/front1.jpg">
+                      <figure class="slider__img"><img src="images/hotel/front1.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/pushkin.jpg">
+                      <figure class="slider__img"><img src="images/hotel/pushkin.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/bar5.jpg">
+                      <figure class="slider__img"><img src="images/hotel/bar5.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/bar6.jpg">
+                      <figure class="slider__img"><img src="images/hotel/bar6.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/bar7.jpg">
+                      <figure class="slider__img"><img src="images/hotel/bar7.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/bar8.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall8.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall9.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall9.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall10.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall10.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall1.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall1.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall2.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall2.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall3.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall3.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall4.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall4.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall5.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall5.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall6.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall6.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall7.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall7.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall8.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall8.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall9.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall9.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall10.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall10.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall11.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall11.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall12.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall12.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall13.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall13.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall14.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall14.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall15.jpg">
+                      <figure class="slider__img"><img src="images/hotel/hall15.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/hall16">
+                      <figure class="slider__img"><img src="images/hotel/hall16.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/room1.jpg">
+                      <figure class="slider__img"><img src="images/hotel/room1.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/room2.jpg">
+                      <figure class="slider__img"><img src="images/hotel/room2.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/room3.jpg">
+                      <figure class="slider__img"><img src="images/hotel/room3.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/room4.jpg">
+                      <figure class="slider__img"><img src="images/hotel/room4.jpg" alt=""></figure></a><a class="slider-nav__item" href="images/hotel/room5.jpg">
+                      <figure class="slider__img"><img src="images/hotel/room5.jpg" alt=""></figure></a></div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-members" id="members">
+          <div class="container">
+            <h1 class="caption">Участники</h1>
+            <div class="s-members__content">
+              <div class="s-members__list">
+                <div class="members-list"></div>
               </div>
             </div>
           </div>
@@ -320,45 +1134,54 @@
         <section class="s-register" id="checkin">
           <div class="container">
             <h2 class="caption">Регистрационная форма</h2>
-            <div class="enrollment-form">
-              <form method="post" action="" id="checkin">
-                <div class="enrollment-form__field form-group"><span class="form-group__icon"></span>
-                  <label class="form-group__label visuallyHidden" for="lastname">Фамилия</label>
-                  <input class="form-group__field" type="text" id="lastname" placeholder="Фамилия">
-                </div>
-                <div class="enrollment-form__field form-group"><span class="form-group__icon"></span>
-                  <label class="form-group__label visuallyHidden" for="firstname">Имя</label>
-                  <input class="form-group__field" type="text" id="firstname" placeholder="Имя">
-                </div>
-                <div class="enrollment-form__field form-group"><span class="form-group__icon"></span>
-                  <label class="form-group__label visuallyHidden" for="middlename">Отчество</label>
-                  <input class="form-group__field" type="text" id="middlename" placeholder="Отчество">
-                </div>
-                <div class="enrollment-form__field form-group"><span class="form-group__icon"></span>
-                  <label class="form-group__label visuallyHidden" for="phone">Контактный телефона</label>
-                  <input class="form-group__field" type="tel" id="phone" placeholder="Контактный телефона">
-                </div>
-                <div class="enrollment-form__field form-group"><span class="form-group__icon"></span>
-                  <label class="form-group__label visuallyHidden" for="email">Email</label>
-                  <input class="form-group__field" type="email" id="email" placeholder="Email">
-                </div>
-                <div class="enrollment-form__button">
-                  <button class="button" type="button">Зарегистрироваться</button>
-                </div>
-              </form>
+            <div class="s-register__content">
+              <p>Пройдите по <a class="download-link title" download href="images/registration-form.doc" title="Форма регистрации">ссылке</a>, чтобы зарегистрироваться на семинар. Заполните форму и отправьте на электронный адрес: <a class="title" href="mailto:notaryspb@bk.ru">notaryspb@bk.ru</a> до <span class="title">14 июня 2019 года</span>.</p>
             </div>
-            <div class="s-register__content"><a class="download-link" download href="images/registration-form.doc" title="Форма регистрации">Cкачать регистрационную форму</a></div>
           </div>
         </section>
         <footer class="footer">
-          <div class="container">
-            <!--picture.shine-white
-            // [if IE 9]><video style="display: none;"><![endif]
-            source( srcset="img/product.png" media="(max-width: 991px)")
-            source( srcset="img/desktop/product.png")
-            // [if IE 9]></video><![endif]
-            <img  srcset="img/desktop/product.png">
-            -->
+          <div class="footer__inner">
+            <div class="container">
+              <div class="contacts">
+                <div class="contacts__title"> 
+                  <h4>Контакты для дополнительной информации:</h4>
+                  <h5>Фирма-организатор:</h5>
+                </div>
+                <div class="contacts__wrap">
+                  <div class="contact">
+                    <h5>Оксана Евгеньевна Линдюк</h5>
+                    <p>Ведущий менеджер  </p>
+                    <div class="contact__data">
+                      <div class="phone__icon">
+                        <svg class="icon call-icon" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#call"></use>
+                        </svg>
+                      </div>
+                      <p>+7 911 912 97 10</p>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <h5>Ирина Владимировна Кириллова</h5>
+                    <p>Исполнительный директор </p>
+                    <div class="contact__data">
+                      <div class="phone__icon">
+                        <svg class="icon call-icon" aria-hidden="true">
+                          <use xlink:href="images/sprite.svg#call"></use>
+                        </svg>
+                      </div>
+                      <p>+7 921 995 34 68 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="container">
+              <div class="copyright">
+                <p>Copyright &copy; 2019 | All Rights Reserved | Designed by Anastasia Tref</p>
+              </div>
+            </div>
           </div>
         </footer>
       </main>
